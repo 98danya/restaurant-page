@@ -1,22 +1,33 @@
-import injeraImg from "/resources/injera.png";
+import injeraImg from "/resources/injera-home.jpg";
 
 export function displayHome() {
     
+    
     const divContent = document.getElementById("content");
+
+    const homeContainer = document.createElement("div");
+    homeContainer.classList.add("home-container"); 
+    
     const imageOne = document.createElement("img");
     imageOne.src = injeraImg;
-
-    divContent.appendChild(imageOne);
+    imageOne.classList.add("home-image");
 
     const restaurantName = document.createElement("h1");
-    restaurantName.innerHTML = "Asmarino";
-
-    divContent.appendChild(restaurantName);
+    restaurantName.innerHTML = "Asmarino <br> – explore east african cuisine.";
 
     const restaurantInfo = document.createElement("p");
     restaurantInfo.innerHTML = "Come and explore east african cuisine!";
 
-    divContent.appendChild(restaurantInfo);
+
+    homeContainer.appendChild(imageOne);
+    const textContainer = document.createElement("div"); 
+    textContainer.appendChild(restaurantName);
+    textContainer.appendChild(restaurantInfo);
+    textContainer.classList.add("text-container");
+    homeContainer.appendChild(textContainer);
+
+
+    divContent.appendChild(homeContainer);
 
 
 }
