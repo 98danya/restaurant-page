@@ -165,18 +165,18 @@ header {
   textarea {
     max-width: 500px;
     color: #f0f035;
-  }
+}
 
-  .contact-input {
+.contact-input {
     font-family: League Spartan, sans-serif;
     min-height: 30px; 
     max-height: 300px;
     border-radius: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-  }
+}
 
-  .contact-message {
+.contact-message {
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -214,9 +214,59 @@ header {
     width: 700px;
     overflow: hidden;
     transition: all .2s ease-in-out;
-  }
-  
+}
 
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%; 
+    max-width: 1200px; 
+    background-color: #943434;
+    padding: 15px; 
+    border-radius: 15px; 
+    box-sizing: border-box;
+    gap: 10px; 
 
+}
 
+.menu-one, .menu-three {
+    display: flex;
+    flex-direction: row;
+}
 
+.menu-two, .menu-four {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-text-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5%;
+}
+
+.menu-text-container h1 {
+    color: #e1d41d;
+    font-family: League Spartan, sans-serif;
+    font-size: 300%;
+    margin-bottom: 15px;
+}
+
+.menu-text-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 10px;
+    font-size: 90%;
+
+}
+    
+.menu-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 4%;
+}
