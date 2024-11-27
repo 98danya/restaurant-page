@@ -63,10 +63,10 @@ export function displayAbout() {
     aboutTextContainer.classList.add("about-text-container");
 
     const aboutAsmarinoHeader = document.createElement("h1");
-    aboutAsmarinoHeader.innerHTML = "The Heart of <br>East African Cuisine";
+    aboutAsmarinoHeader.innerHTML = "The Heart of <br>East African Cuisine,";
 
     const aboutAsmarinoText = document.createElement("p");
-    aboutAsmarinoText.innerHTML = "East African cuisine features bold spices, fresh ingredients, and rich traditions. At its heart is injera, a tangy teff flatbread used to enjoy lentil stews, slow-cooked meats, and vibrant vegetables, all seasoned with unique spices like berbere and mitmita. <br> <br>At <strong>Asmarino</strong>, we honor these traditions while offering a menu that caters to diverse tastes. Whether you’re savoring the comforting richness of Shiro or experiencing the fiery zest of Doro Tsebhi, every bite tells a story of resilience, community, and love.";
+    aboutAsmarinoText.innerHTML = "features bold spices, fresh ingredients, and rich traditions. At its heart is injera, a tangy teff flatbread used to enjoy lentil stews, slow-cooked meats, and vibrant vegetables, all seasoned with unique spices like berbere and mitmita. <br> <br>At <strong>Asmarino</strong>, we honor these traditions while offering a menu that caters to diverse tastes. Whether you’re savoring the comforting richness of Shiro or experiencing the fiery zest of Doro Tsebhi, every bite tells a story of resilience, community, and love.";
 
     aboutTextContainer.appendChild(aboutAsmarinoHeader);
     aboutTextContainer.appendChild(aboutAsmarinoText);

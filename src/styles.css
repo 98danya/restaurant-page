@@ -1,40 +1,47 @@
 @font-face {
     font-family: League Spartan;
     src: url(/resources/LeagueSpartan-Bold.otf);
-  }
+}
 
 body {
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
 }
 
 .logo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    margin-bottom: 30px; 
-    
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .logo-image {
+    width: 90%; 
     max-width: 350px;
-    height: auto; 
+    height: auto;
     transform: scale(1.0, 1.5);
 }
 
 .logo-container h1 {
-    font-size: 33px;
+    font-size: 2rem;
     font-family: League Spartan, sans-serif;
     font-weight: bolder;
-    text-transform:uppercase;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .nav-btns {
     display: flex;
     position: relative;
-    height: 100%;
     justify-content: space-between;
-    margin: 0 60px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .nav-button {
@@ -43,8 +50,8 @@ body {
     text-align: center;
     color: #000000;
     font-family: League Spartan, sans-serif;
-    font-size: 18px;
-    line-height: 50px;
+    font-size: 1rem;
+    line-height: 2.5rem;
     cursor: pointer;
     z-index: 1;
 }
@@ -91,7 +98,7 @@ button:nth-child(3):hover ~ .animation {
     left: 67%;
     background-color: #407547;
 }
-  
+
 header {
     padding: 20px;
 }
@@ -101,157 +108,150 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    
+    padding: 40px 20px;
 }
 
 .home-container {
     display: flex;
+    flex-direction: row; 
     align-items: center;
-    gap: 50px; 
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Reverse layout for smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column; 
+        text-align: center;
+    }
 }
 
 .home-image {
-    width: 100%; 
+    flex: 1 1 auto;
     max-width: 600px;
+    width: 100%;
     height: auto;
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
 .text-container {
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    gap: 20px; 
-    text-align: left; 
+    gap: 20px;
+    text-align: left;
+    max-width: 600px;
 }
 
 .text-container h1 {
     font-family: League Spartan, sans-serif;
     font-weight: bolder;
-    font-size: 45px;
+    font-size: 2rem;
     margin: 0;
 }
 
 .text-container p {
-    font-size: 16px; 
+    font-size: 1rem;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
-    color: #34495e; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #34495e;
 }
 
 .contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     margin-top: 30px;
-    width: 100%; 
-    max-width: 1200px; 
+    width: 90%;
+    max-width: 1200px;
     background-color: #34495e;
-    padding: 15px; 
-    border-radius: 15px; 
-    box-sizing: border-box; 
+    padding: 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #e1d41d;
 }
 
 .contact-form {
     font-family: League Spartan, sans-serif;
     display: flex;
-    flex-direction: column; 
-    gap: 10px; 
-    width: 100%; 
-}
-  
-.contact-form, 
-  textarea {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
     max-width: 500px;
-    color: #f0f035;
 }
 
-.contact-input {
-    font-family: League Spartan, sans-serif;
-    min-height: 30px; 
-    max-height: 300px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-.contact-message {
+.contact-input, .contact-message {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 8px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    resize:horizontal;
-    min-height: 80px; 
-    max-height: 300px;
-    font-family: League Spartan, sans-serif;
 }
 
 .contact-submit {
     margin-top: 15px;
     height: 40px;
-    width: 100%; 
-    max-width: 500px;
+    width: 100%;
     background-color: #f0f035;
     border: none;
     color: #34495e;
-    font-size: 16px;
+    font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     font-family: League Spartan, sans-serif;
 }
 
 .contact-submit:hover {
     background-color: #e1d41d;
 }
-  
-.contact-submit {
-    margin-top: 15px;
-    height: 34px;
-    width: 700px;
-    overflow: hidden;
-    transition: all .2s ease-in-out;
-}
 
 .menu-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    width: 100%; 
-    max-width: 1200px; 
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
     background-color: #943434;
-    padding: 15px; 
-    border-radius: 15px; 
+    padding: 15px;
+    border-radius: 15px;
     box-sizing: border-box;
-    gap: 10px; 
-
+    gap: 10px;
 }
 
 .menu-one, .menu-three {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    gap: 10px;
 }
 
 .menu-two, .menu-four {
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: row-reverse;
+    gap: 10px;
 }
 
 .menu-text-container {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin: auto 5%;
+    margin: auto;
+    text-align: left 5%;
 }
 
 .menu-text-container h1 {
     color: #e1d41d;
     font-family: League Spartan, sans-serif;
-    font-size: 300%;
+    font-size: 2rem;
     margin-bottom: 15px;
+    margin-bottom: 15px ;
 }
 
 .menu-text-container p {
@@ -259,16 +259,16 @@ header {
     font-weight: 500;
     color: #ffffff;
     margin-top: 10px;
-    font-size: 90%;
-
+    font-size: 1rem;
+    margin-top: 10px;
 }
-    
+
 .menu-image {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    object-fit: cover; 
-    margin: 4%;
+    margin: 5px;
+    object-fit: cover;
 }
 
 .about-container {
@@ -283,82 +283,103 @@ header {
 .about-intro {
     display: flex;
     flex-direction: column;
-    width: 100%; 
-    max-width: 1200px; 
+    width: 90%;
+    max-width: 1200px;
     background-color: #407547;
-    padding: 20px; 
-    border-radius: 15px; 
+    padding: 20px;
+    border-radius: 15px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .about-container h1 {
     color: #e1d41d;
     font-family: League Spartan, sans-serif;
     font-weight: bolder;
-    font-size: 250%;
+    font-size: 2rem;
     margin-bottom: 0;
 }
 
 .about-container p {
     color: #e1d41d;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 90%;
+    font-size: 1rem;
     margin-top: 0;
+    text-align: center;
 }
 
 .about-asmara {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 20px 0;
 }
 
 .about-asmara h1 {
     margin: 20px;
     color: #000000;
-    font-size: 260%;
-
-
+    font-size: 2rem;
+    text-align: center;
 }
 
 .about-asmara p {
-    margin: 20px;
+    margin: 0 50px;
     color: #34495e;
-    font-size: 90%;
-
-
+    font-size: 1rem;
+    text-align: center;
 }
 
 .about-image {
     width: 100%;
     max-width: 610px;
-    height: 20%; 
+    height: auto;
     transform: scale(1.0, 0.9);
-    border-radius: 15px; 
+    border-radius: 15px;
     box-sizing: border-box;
-    margin-top: 0;
 }
 
 .about-asmarino {
     display: flex;
-    flex-direction: row;
-    width: 100%; 
-    max-width: 1200px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
     background-color: #407547;
-    padding: 20px; 
-    border-radius: 15px; 
+    padding: 20px;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
 .about-asmarino-image {
     width: 100%;
     max-width: 450px;
-    transform: scale(1.0, 1.0);
-    border-radius: 15px; 
+    height: auto;
+    border-radius: 15px;
     box-sizing: border-box;
-    padding: 40px 10px;
 }
 
-.about-text-container h1, .about-text-container p {
-    padding: 20px 10px;
+.about-text-container {
+    flex: 1;
+    text-align: center;
+}
 
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer a {
+    color: #f0f035;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
