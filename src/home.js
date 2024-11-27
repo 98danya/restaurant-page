@@ -34,7 +34,7 @@ export function displayHome() {
     imageOne.classList.add("home-image");
 
     const restaurantName = document.createElement("h1");
-    restaurantName.innerHTML = "ASMARINO <br> – explore east african cuisine.";
+    restaurantName.innerHTML = "Explore <br>East African <br>Cuisine.";
 
     const restaurantInfo = document.createElement("p");
     restaurantInfo.innerHTML = "With a wide range of selections from veggie dishes to very spicy chicken. There's something for everyone.";

@@ -136,7 +136,7 @@ header {
     font-size: 16px; 
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
-    color: #666; 
+    color: #34495e; 
 }
 
 .contact-container {
@@ -269,4 +269,96 @@ header {
     border-radius: 50%;
     object-fit: cover; 
     margin: 4%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.about-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 1200px; 
+    background-color: #407547;
+    padding: 20px; 
+    border-radius: 15px; 
+    box-sizing: border-box;
+}
+
+.about-container h1 {
+    color: #e1d41d;
+    font-family: League Spartan, sans-serif;
+    font-weight: bolder;
+    font-size: 250%;
+    margin-bottom: 0;
+}
+
+.about-container p {
+    color: #e1d41d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    margin-top: 0;
+}
+
+.about-asmara {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about-asmara h1 {
+    margin: 20px;
+    color: #000000;
+    font-size: 260%;
+
+
+}
+
+.about-asmara p {
+    margin: 20px;
+    color: #34495e;
+    font-size: 90%;
+
+
+}
+
+.about-image {
+    width: 100%;
+    max-width: 610px;
+    height: 20%; 
+    transform: scale(1.0, 0.9);
+    border-radius: 15px; 
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.about-asmarino {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+    max-width: 1200px; 
+    background-color: #407547;
+    padding: 20px; 
+    border-radius: 15px; 
+    box-sizing: border-box;
+}
+
+.about-asmarino-image {
+    width: 100%;
+    max-width: 450px;
+    transform: scale(1.0, 1.0);
+    border-radius: 15px; 
+    box-sizing: border-box;
+    padding: 40px 10px;
+}
+
+.about-text-container h1, .about-text-container p {
+    padding: 20px 10px;
+
 }
